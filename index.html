@@ -85,13 +85,8 @@
     <div class="dropdown">
         <select id="dashboardSelect" onchange="checkPassword()">
             <option value="" selected disabled>Select a Dashboard</option>
-            <option value="dashboard1">2026 QA Audit (Protected)</option>
-            <option value="dashboard2">2025 QA Audit (Protected)</option>
-            <option value="dashboard3">Response Data</option>
-            <option value="dashboard6">Sepsis Dashboard</option>
-            <option value="dashboard7">Cardiac Arrest Data</option>
-            <option value="dashboard8">Community Paramedic Data</option>
-            <option value="dashboard9">Airway Dashboard</option>
+            <option value="dashboard1">Operational KPIs</option>
+            <option value="dashboard2">(Archived) Response Data Dashboard</option>
         </select>
     </div>
     
@@ -106,24 +101,13 @@
     <script>
         var urls = {
 
-            "dashboard1": "https://app.powerbigov.us/view?r=eyJrIjoiNGE3ZDdlYzQtMTg5NC00NzAxLWJlYjgtYzZkZjQyZDBhZTRhIiwidCI6ImFkMWM0MmQ0LThjZWUtNGUwNS04YTNiLTA3ZWQ2OTY4ZmI2YyJ9&pageName=feacf43c849f9373b6d1",
-
-            "dashboard2": "https://app.powerbigov.us/view?r=eyJrIjoiNTkyZjlmZWQtMTQzNC00ZWQ4LTk4MTAtYTcxNTk1NzFlOTRjIiwidCI6ImFkMWM0MmQ0LThjZWUtNGUwNS04YTNiLTA3ZWQ2OTY4ZmI2YyJ9&pageName=feacf43c849f9373b6d1",
+            "dashboard1": "https://app.powerbigov.us/view?r=eyJrIjoiMjU0NTM3MDctOTVmYS00OGNlLWFjNDQtODNlMTRiODExMjc4IiwidCI6ImFkMWM0MmQ0LThjZWUtNGUwNS04YTNiLTA3ZWQ2OTY4ZmI2YyJ9&pageName=f9040f800ae1d037a096",
             
-            "dashboard3": "https://app.powerbigov.us/view?r=eyJrIjoiOGNhMjQxNTMtNjEwOC00ZGYzLWIzNTYtZDk2OTNiMWZhM2FiIiwidCI6ImFkMWM0MmQ0LThjZWUtNGUwNS04YTNiLTA3ZWQ2OTY4ZmI2YyJ9&pageName=05a9620a69e919d9d005",
-
-            "dashboard6": "https://app.powerbigov.us/view?r=eyJrIjoiMWY5NGM5NjEtNzU3ZC00YTYzLTg4NDMtZTU2MmIxYWI0NGQ0IiwidCI6ImFkMWM0MmQ0LThjZWUtNGUwNS04YTNiLTA3ZWQ2OTY4ZmI2YyJ9&pageName=5c28109d906b86b19cde",
-
-            "dashboard7": "https://app.powerbigov.us/view?r=eyJrIjoiZmM0YWU1YWMtZDcyOC00MDAyLWE2YTAtZTVkYzkzNjA1MjU2IiwidCI6ImFkMWM0MmQ0LThjZWUtNGUwNS04YTNiLTA3ZWQ2OTY4ZmI2YyJ9",
-
-            "dashboard8": "https://app.powerbigov.us/view?r=eyJrIjoiMTExMTc3OWQtNDg1YS00ZTY2LTk3NTQtYmIyNDk2YjJjMDhjIiwidCI6ImFkMWM0MmQ0LThjZWUtNGUwNS04YTNiLTA3ZWQ2OTY4ZmI2YyJ9&pageName=d0ed363d8672dd2a3617",
-
-            "dashboard9": "https://app.powerbigov.us/view?r=eyJrIjoiOWZhNzIwZmYtZWQ4Ny00NjQyLTk1MGQtMWE1YjcyZWUzODYyIiwidCI6ImFkMWM0MmQ0LThjZWUtNGUwNS04YTNiLTA3ZWQ2OTY4ZmI2YyJ9&pageName=76734579c80297ed6a16"
+            "dashboard2": "https://app.powerbigov.us/view?r=eyJrIjoiOGNhMjQxNTMtNjEwOC00ZGYzLWIzNTYtZDk2OTNiMWZhM2FiIiwidCI6ImFkMWM0MmQ0LThjZWUtNGUwNS04YTNiLTA3ZWQ2OTY4ZmI2YyJ9&pageName=05a9620a69e919d9d005"
         };
 
         var passwords = {
-            "dashboard1": "securepass123",
-            "dashboard2": "securepass123"
+
         };
 
         function checkPassword() {
